@@ -3,7 +3,7 @@
 /**
  * print_alphabet - prints alphabet in lower case
  *
- * created : Odiase
+ * created : Odiase_samuel
  * cc: 5th july, 2022
  *
  * Return: void
