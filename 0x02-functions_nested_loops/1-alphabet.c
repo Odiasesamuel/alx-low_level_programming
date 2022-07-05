@@ -1,13 +1,14 @@
-/*
- * File: 1-alphabet.c
- * Auth: Brennan D Baraban
- */
-
 #include "main.h"
 
 /**
- * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ * print_alphabet - prints alphabet in lower case
+ *
+ * created : Odiase
+ * cc: 5th july, 2022
+ *
+ * Return: void
  */
+
 void print_alphabet(void)
 {
 	char letter;
