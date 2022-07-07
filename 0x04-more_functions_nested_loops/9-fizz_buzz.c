@@ -1,35 +1,40 @@
-#include <stdio.h>
-#define stopVar 100
-
-/**
- * main - main function
- * checks through numbers from 1 - 100
- * and print number if it is not a multiple of 3 or 5
- * print fizz if its a multiple of 3
- * buzz if its a multiple of 5
- * and fizz buzz if its both a multiple of 3 and 5
- *
- * Created by: Odiase
- * cc: 7th july, 2022
- *
- * Return: 0 if successful
+/*
+ * File: 9-fizz_buzz.c
+ * Auth: Odiase
  */
 
+#include <stdio.h>
+
+/**
+ * main - Prints the numbers from 1-100, but for multiples of three,
+ *        Fizz is printed instead of the number, for multiples of five,
+ *        Buzz, and for multiples of both three and five, FizzBuzz.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int ii = 1;
+	int num;
 
-	do {
-		if ((ii % 3 == 0) && (ii % 5 == 0))
-			printf("FizzBuzz ");
-		else if (ii % 3 == 0)
-			printf("Fizz ");
-		else if (ii % 5 == 0)
-			printf("Buzz ");
+	for (num = 1; num <= 100; num++)
+	{
+		if ((num % 3) == 0 && (num % 5) == 0)
+			printf("FizzBuzz");
+
+		else if ((num % 3) == 0)
+			printf("Fizz");
+
+		else if ((num % 5) == 0)
+			printf("Buzz");
+
 		else
-			printf("%d ", ii);
-		ii++;
-	} while (ii < stopVar + 1);
+			printf("%d", num);
+
+		if (num == 100)
+			continue;
+		printf(" ");
+	}
+
 	printf("\n");
 
 	return (0);
